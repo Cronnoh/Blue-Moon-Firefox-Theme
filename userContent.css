@@ -1,0 +1,14 @@
+@-moz-document url("about:home"), url("about:newtab") {
+  body {
+    background-image: url(images/ntp.png) !important;
+    background-repeat: no-repeat !important;
+    /*background-position: top !important;
+    background-size: cover !important;
+	overflow-y : hidden !important;*/
+  }
+}
+
+* {
+    scrollbar-color: #555555 #202020 !important;
+    scrollbar-width: thin !important;
+}

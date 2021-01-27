@@ -1,0 +1,154 @@
+:root {
+	--P3Blue1: #4EA3FE;
+	--P3Blue2: #0C89E9;
+	--P3Blue3: #002E48;
+	--P3Yellow: #FFBE5F;
+    --h: 60px;
+    user-select: none;
+}
+
+body {
+    background-color: var(--P3Blue1);
+    background-image: url(../images/test.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+ul {
+    margin-top: 100px;
+}
+
+li {
+    box-sizing: border-box;
+    width: 400px;
+    height: var(--h);
+    border-radius: 0px 15px 15px 0px;
+    list-style: none;
+    margin-left: -67px;
+    color: var(--P3Blue3);
+    /* border: solid 1px black; */
+}
+
+li:hover {
+    background-color: var(--P3Blue3);
+    color: white;
+}
+
+a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%; 
+    color: inherit;
+    font: 42px 'Arial Black';
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: calc(((var(--h) - 30px) / 2) - 9px);
+    padding-left: 100px;
+    /* border: solid 1px green; */
+
+}
+
+input {
+    border: none;
+    width: 60%;
+    padding: 10px;
+    margin-top: calc((var(--h) - 44px) / 2);
+    margin-left: 100px;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* left squares *************************************/
+a::before, .search::before {
+    display: box;
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    margin-top: 9px;
+    margin-left: -60px; /* Distance between bullet and label */
+    background-color: var(--P3Blue3);
+}
+
+.search::before {
+    margin-top: 15px;
+    margin-left: 40px; /* Distance between bullet and box */
+}
+
+a:hover::before, .search:hover::before {
+    background-color: var(--P3Yellow);
+}
+/* ***************************************************/
+
+.bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    display: box;
+    height: 100vh;
+    width: 72px;
+    background-color: var(--P3Yellow);
+    z-index: -1;
+}
+
+/* Date and Time *************************************/
+#clock {
+    box-sizing: border-box;
+    display: box;
+    position: absolute;
+    top: -110px;
+    left: 850px;
+    width: 700px;
+    height: 200px;
+    padding-top: 153px;
+    padding-left: 9px;
+    background-color: var(--P3Blue3);
+    transform: rotateZ(345deg);
+}
+
+#fulldate, #fulltime {
+    font: 50px 'Arial Black';
+    margin: 0px;
+    /* border: solid 1px red; */
+}
+
+#fulldate {
+    font-size: 40px;
+    color: var(--P3Blue1);
+}
+
+#date {
+    color: var(--P3Yellow);
+}
+
+#day {
+    color: var(--P3Blue1);
+}
+
+#fulltime {
+    margin-top: -13px;
+    margin-left: -12px;
+}
+
+#time {
+    color: var(--P3Blue2);
+    font-size: 120px;
+}
+
+#meridiem {
+    color: var(--P3Yellow);
+    font-size: 30px;
+}
+/* *****************************************************/
+
+#moon {
+    display: box;
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 9px;
+    width: 40px;
+    height: 40px;
+    /* border: solid 1px yellow; */
+}

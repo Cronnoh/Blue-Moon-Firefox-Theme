@@ -1,0 +1,125 @@
+:root {
+	--P3Blue1: #4EA3FE;
+	--P3Blue2: #0C89E9;
+	--P3Blue3: #002E48;
+	--P3Yellow: #FFBE5F;
+}
+
+/* Background image */
+#navigator-toolbox {
+	background-image: url("../images/bg.png") !important;
+    /* background-position: top right; */
+}
+
+/* Transparent toolbars */
+#nav-bar, #toolbar-menubar, #PersonalToolbar, #browser-panel {
+	background-color: transparent !important;
+}
+
+/* line below navbar */
+#navigator-toolbox {
+	border-bottom: none !important;
+}
+
+/* Make toolbar buttons dark blue */
+.toolbarbutton-animatable-box, .toolbarbutton-1 {
+	color: var(--P3Blue3) !important;
+	fill-opacity: 1 !important;
+}
+
+/* Make bookmark text dark blue */
+.bookmark-item {
+	color: var(--P3Blue3) !important;
+}
+
+/* extension notification color */
+.toolbarbutton-badge {
+	background-color: var(--P3Blue1) !important;
+	color: rgba(220, 242, 255, 1) !important;
+}
+
+/* extra space around bookmarks */
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+	padding: 2px 6px !important;
+	margin-bottom: 4px !important;
+}
+
+#urlbar, .searchbar-textbox {
+	margin-top: 2px !important;
+}
+
+#urlbar-background {
+	border-radius: 1px 10px 1px 10px !important;
+}
+
+/* Change Color of bottom left thing */
+#statuspanel-label {
+	background-color: var(--P3Blue2) !important;
+	color: var(--P3Blue3) !important;
+	border: none !important;
+}
+
+#back-button:not([disabled="true"]):hover {
+	background-color: #002E4830 !important;
+	box-shadow: none !important;
+}
+
+/* Removes circle around back button */
+#back-button>.toolbarbutton-icon {
+	background-color: initial !important;
+	border: initial !important;
+}
+
+/* prevent tabs overlaping blue */
+:root:not([sizemode=normal]) .titlebar-buttonbox{
+	padding-left: 99px !important;
+}
+
+/* Top right buttons dark blue */
+:root:not([sizemode=normal]) .titlebar-button{
+	stroke: var(--P3Blue3) !important;
+}
+
+:root[sizemode=normal] #new-tab-button, 
+:root[sizemode=normal] #alltabs-button {
+	color: inherit !important;
+}
+
+/* Overflow arrows */
+#scrollbutton-up > .toolbarbutton-icon {
+	fill: var(--P3Blue1);
+	fill-opacity: 1;
+}
+
+#scrollbutton-down > .toolbarbutton-icon {
+	fill: var(--P3Blue3);
+	fill-opacity: 1;
+}
+
+/* remove shadow from overflow arrows */
+spacer[part="overflow-end-indicator"], spacer[part="overflow-start-indicator"] {
+	display: none; 
+}
+
+:root:not([sizemode=normal]) #new-tab-button, 
+:root:not([sizemode=normal]) #alltabs-button {
+	color: var(--P3Blue3) !important;
+}
+
+/* remove new tab button */
+#tabs-newtab-button {
+	display: none !important; 
+}
+
+/* Menu bar covers tabs when visible */
+#toolbar-menubar:not([inactive]) + #TabsToolbar {
+    display: none;
+}
+
+#toolbar-menubar:not([inactive]) {
+    margin-bottom: 1px;
+}
+
+/* #new-tab-button:hover > .toolbarbutton-icon {
+  background-color: var(--P3Blue3) !important; 
+} */

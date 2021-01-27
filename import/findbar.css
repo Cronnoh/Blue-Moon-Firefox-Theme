@@ -1,0 +1,97 @@
+/*Findbar (https://old.reddit.com/r/FirefoxCSS/comments/f1w8o0/findbar_issues/)*/
+.findbar-match-diacritics {display: none !important;}
+.findbar-case-sensitive {display: none !important;}
+.findbar-highlight {display: none !important;}
+.findbar-entire-word {display: none !important;}
+.findbar-find-status {display: none !important;}
+ 
+.findbar-find-fast { padding: 0px !important;}
+.findbar-find-fast { padding-left: 4px !important;}
+.findbar-container  {margin-right: -40px !important;}
+findbar[hidden] {transform: translateY(-15px);}
+findbar > .findbar-container > hbox{margin-right: 20px;}
+ 
+findbar {
+  border-color: transparent  !important;
+  -moz-box-ordinal-group: 0 !important;
+  transition: transform 82ms linear, opacity 82ms linear 32ms !important;
+  background: none !important;
+  pointer-events: none;
+  position: fixed !important;
+  right: 0 !important;
+  z-index: 1 !important;
+  display: flex;
+  border-top: none !important;
+  top: 76px !important;
+  margin-right: 180px !important;
+}
+ 
+.findbar-closebutton {
+  color: #002E48 !important;
+  border-bottom-right-radius: 5px !important;
+}
+ 
+findbar > .findbar-container,
+findbar > .close-icon{
+  padding: 6px !important;
+  margin-left: 11px !important;
+  background: transparent !important;
+  pointer-events: auto;
+  color: #002E48;
+}
+ 
+findbar .found-matches {
+direction: ltr !important;
+color: #002E48 !important;
+font-size: 14px;
+font-family: Calibri;
+-moz-box-ordinal-group: 0 !important;
+padding-right: 12px !important;
+padding-left: 5px !important;}
+ 
+.findbar-container > .findbar-find-fast{
+padding: var(--toolbarbutton-inner-padding) 1px;
+margin: 0 !important;}
+
+.findbar-textbox {
+  border-color: #AF8B57 !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+.findbar-find-previous {
+  -moz-box-ordinal-group: 2 !important;
+  border-left-width: 1px !important;
+  border-color: #00000050 !important;
+  
+}
+
+.findbar-find-next {
+  -moz-box-ordinal-group: 1 !important;
+  position: relative !important;
+  border-radius: 0px !important;
+  border-color: #00000050 !important;
+  border-top-right-radius: 5px !important;
+  border-right-width: 1px !important;
+}
+
+.findbar-textbox {
+  -moz-box-ordinal-group: 3 !important;
+  color: #002E48;
+}
+ 
+findbar > .findbar-container{
+  -moz-box-direction: reverse;
+  background-color: transparent !important;
+  border-bottom-left-radius: 5px !important;
+}
+
+findbar .findbar-container {direction: rtl !important;}
+ 
+findbar .findbar-textbox {
+border-right: 0px !important;
+direction: ltr !important;}
+ 
+input.findbar-textbox::placeholder {opacity: 0 !important;}
+.findbar-textbox::placeholder {display:none !important;}
+
+.findbar-textbox[status="notfound"] {background-color: #CCCCCC !important;}

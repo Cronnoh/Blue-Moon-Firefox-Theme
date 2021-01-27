@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1920"
+   height="108"
+   viewBox="0 0 508 28.575001"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="bg.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.6203869"
+     inkscape:cx="1738.1982"
+     inkscape:cy="8.4486925"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showborder="true"
+     gridtolerance="10"
+     inkscape:snap-tangential="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false"
+     showguides="false"
+     units="px"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="false"
+     inkscape:bbox-paths="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4317"
+       color="#808080"
+       opacity="0.1254902"
+       empcolor="#404040"
+       empopacity="0.25098039"
+       spacingx="13.229167"
+       spacingy="13.229167"
+       snapvisiblegridlinesonly="true"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-268.42499)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path4425"
+       d="m 0,268.42499 v 8.73125 17.72708 h 508.00003 v -17.72708 -8.73125 z"
+       style="fill:#ffbe5f;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26458332" />
+    <rect
+       y="268.42508"
+       x="3.7343751e-005"
+       height="8.7312498"
+       width="508"
+       id="rect4427"
+       style="fill:#002e48;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26458332" />
+    <path
+       style="display:inline;opacity:1;fill:#002e48;fill-opacity:1;fill-rule:evenodd;stroke-width:0.16573755"
+       d="m 437.43949,276.89533 c 4.36065,1.19751 23.48825,9.65458 33.58809,17.98799 h 36.97243 v -16.96485 z m 34.87537,18.76986 c 1.28527,0.78966 2.56559,1.60289 3.8349,2.43964 -1.26947,-0.83758 -2.54963,-1.65021 -3.8349,-2.43964 z"
+       id="path4439"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       style="display:inline;opacity:1;fill:#0c89e9;fill-opacity:1;fill-rule:evenodd;stroke-width:0.17144962"
+       d="m 341.54293,268.42499 c 44.1352,2.42546 68.10005,4.062 111.3204,11.58601 18.86612,4.09375 36.83934,10.42304 54.26594,14.87232 h 0.87074 v -26.45833 z"
+       id="path4443"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+    <rect
+       style="fill:#002e48;fill-rule:evenodd;stroke-width:0.26458335;fill-opacity:1"
+       id="rect4504"
+       width="508"
+       height="2.1166668"
+       x="0"
+       y="294.88333" />
+    <path
+       style="display:inline;opacity:1;fill:#0c89e9;fill-opacity:1;fill-rule:evenodd;stroke-width:0.64799851"
+       d="M 1166.8477 100 C 1206.6648 102.18816 1249.2481 104.85083 1293.1641 108 L 1920 108 L 1920 100 L 1166.8477 100 z "
+       id="path4514"
+       transform="matrix(0.26458334,0,0,0.26458334,0,268.42499)" />
+  </g>
+</svg>
