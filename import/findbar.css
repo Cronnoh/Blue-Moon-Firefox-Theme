@@ -22,7 +22,7 @@ findbar {
   z-index: 1 !important;
   display: flex;
   border-top: none !important;
-  top: 76px !important;
+  top: 75px !important;
   margin-right: 180px !important;
 }
  
@@ -33,9 +33,7 @@ findbar {
  
 findbar > .findbar-container,
 findbar > .close-icon{
-  padding: 6px !important;
   margin-left: 11px !important;
-  background: transparent !important;
   pointer-events: auto;
   color: #002E48;
 }
