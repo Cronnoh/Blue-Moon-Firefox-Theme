@@ -10,71 +10,62 @@
 /* *****************************************************
   Tab Stuff
 ********************************************************/
-.tab-background::before, .tab-background::after {
-  display: -moz-box !important;
-  content: "" !important;
-  background-color: transparent;
-  height: 0px;
-  width: 0px;
-  bottom: 0;
-  border: solid 20px !important; /* Changes angle of tabs */
-  border-top: solid 30px transparent !important;
-  border-bottom: solid 0px transparent !important;
+.tabbrowser-tab {
+    margin-top: 4px !important;
 }
 
-.tab-background::before {
-    border-left: solid 10px transparent !important;
+.tab-background {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+    display: flex;
+    content: "";
+    border: solid 30px var(--inactive-tab-color); /* Changes angle of tabs */
+    border-top: solid 44px transparent;
+    border-bottom: solid 0px transparent;
+}
+
+.tabbrowser-tab::before {
+    border-left: solid 0px transparent;
     filter: drop-shadow(-1px 0px 0px var(--tab-border-color));
 }
 
-.tab-background::after{
-  border-right: solid 10px transparent !important;
-  filter: drop-shadow(1px 0px 0px var(--tab-border-color));
+.tabbrowser-tab::after {
+    border-right: solid 0px transparent;
+    filter: drop-shadow(1px 0px 0px var(--tab-border-color));
 }
 
-.tab-background > spacer { 
-  filter: drop-shadow(0px -1px 0px var(--tab-border-color));
+.tab-stack {
+    background-color: var(--inactive-tab-color);
+    filter: drop-shadow(0px -1px 0px var(--tab-border-color));
 }
 
 /* Active tab customizations */
-.tab-background[selected="true"]::before {
-  border-right-color: var(--active-tab-color) !important;
+.tabbrowser-tab[selected] > .tab-stack {
+    background-color: var(--active-tab-color);
 }
 
-.tab-background[selected="true"]::after {
-  border-left-color: var(--active-tab-color) !important;
+.tabbrowser-tab[selected]::before {
+    border-right-color: var(--active-tab-color);
 }
 
-.tab-background[selected="true"] > spacer {
-  background-color: var(--active-tab-color) !important;
+.tabbrowser-tab[selected]::after {
+    border-left-color: var(--active-tab-color);
 }
 
 /* Tab hover customizations */
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true])::before {
-    border-right-color: var(--hover-tab-color) !important;
+.tabbrowser-tab:not([selected]):hover > .tab-stack {
+    background-color: var(--hover-tab-color);
 }
 
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true])::after {
-  border-left-color: var(--hover-tab-color) !important;
+.tabbrowser-tab:not([selected]):hover::before {
+    border-right-color: var(--hover-tab-color);
 }
 
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected=true]) > spacer {
-  margin-top: 0px !important;
-  background-color: var(--hover-tab-color);
-}
-
-/* Inactive tab customizations */
-.tab-background:not([selected])::before {
-  border-right-color: var(--inactive-tab-color) !important;
-}
-
-.tab-background:not([selected])::after {
-  border-left-color: var(--inactive-tab-color) !important;
-}
-
-.tab-background:not([selected]) > spacer {
-  margin-top: 0px !important;
-  background-color: var(--inactive-tab-color);
+.tabbrowser-tab:not([selected]):hover::after {
+    border-left-color: var(--hover-tab-color);
 }
 
 /* Tab text customizations */
@@ -99,44 +90,16 @@
 }
 
 /* Overlap the tabs */
-.tab-background {
-    -moz-margin-end: -19px !important;
-    -moz-margin-start: -19px !important;
-    background-image: none !important; /* Makes it work with light/dark themes */
-}
-
-/* Allow correct tab to be selected near the edges */
-.tab-background {
-  pointer-events: none !important;
-}
-
-/* Remove vertical lines between tabs */
-.tabbrowser-tab::before,
-.tabbrowser-tab::after {
-  border: none !important;
-}
-
-.tabbrowser-tab > .tab-stack > .tab-background {
-  -moz-box-orient: horizontal !important;
-  background-color: transparent !important;
-  margin-top: 1px !important;
-}
-
-/* To be able to see the top border of the tab */
-.tab-stack {
-  margin-top: 1px !important;
+.tabbrowser-tab {
+    margin-right: -30px !important;
+    background-image: none !important; /* Makes it work with light/dark themes */ 
 }
 
 /* Add padding to the left of first tab */
 #tabbrowser-tabs[overflow] .tabbrowser-tab[first-visible-tab]:not([pinned]),
 #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]),
 #tabbrowser-tabs:not([overflow]) .tabbrowser-tab:first-child {
-	margin-inline-start: 15px !important;
-}
-
- /* Fix overflow pinned tabs */
-#tabbrowser-tabs[overflow] > #tabbrowser-arrowscrollbox > .tabbrowser-tab[pinned]{
-  transform: translate(0px, -1px) !important;
+	margin-inline-start: 8px !important;
 }
 
 /* spacing between overflow arrow and pinned tabs */
@@ -144,47 +107,11 @@
   padding-left: 10px
 }
 
-/* Remove blue animation on tab on page load complete */
-.tab-loading-burst {
-	display: none !important;
-}
-
-/* line below tabs */
-#navigator-toolbox {
-	--tabs-border-color: rgba(0,0,0,0) !important;
-}
-
 /* remove space to left of tabs in windowed mode */
-.titlebar-spacer{
+/* .titlebar-spacer {
 	display: none;
-}
+} */
 
 #tabs-newtab-button {
-  background-color: var(--inactive-tab-color) !important;
-  border-radius: 0px 25px 0px 0px;
-  width: 60px;
-  margin-top: 3px !important;
-  margin-left: -12px !important;
-  margin-bottom: 0px !important;
-}
-
-#tabs-newtab-button::after {
-  display: -moz-box !important;
-  content: "" !important;
-  height: 0px;
-  width: 0px;
-  bottom: 0;
-  border: solid 30px var(--tab-border-color) !important;
-  border-bottom: solid 0px transparent !important;
-  border-left: solid 20px transparent !important;
-  border-right: solid 0px transparent !important;
-  margin-right: -40px;
-}
-
-#tabs-newtab-button image {
-  display: none;
-}
-
-#tabs-newtab-button:hover {
-  background-color: var(--hover-tab-color) !important; 
+    margin-left: 20px !important;;
 }
