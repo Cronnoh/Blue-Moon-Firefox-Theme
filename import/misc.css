@@ -19,92 +19,30 @@
 
 /************************************************************************************************************/
 
-/******************************************************************************************************************************************
- * Remove the "Sign in to sync" from top of photon hamburger menu.
- *
- * Contributor(s): PilzAdam
- */
+/* Remove the "Sign in to sync" from top of hamburger menu. */
 
-#appMenu-fxa-label, .sync-ui-item {
-  display: none !important;
+#appMenu-fxa-status2, #appMenu-fxa-separator {
+  display: none;
 }
 
-/* Hide Content Blocking button*/
-#appMenu-tp-button, #appMenu-tp-separator {
-  display: none !important;
-}
-
-#appMenu-logins-button {
-  display: none !important;
-}
-/*****************************************************************************************************************************
- * Compact findbar at the top of the window
- *
- * Contributor(s): Madis0
- */
-/* OLD
-.browserContainer > findbar {
-  -moz-box-ordinal-group: 0;
-  position: fixed !important;
-  right: 17px;
-  border: 1px solid threedshadow !important;
-
-  /* Hide the "border" at the top by removing the box-shadow and background-image *//*
-  border-top: none !important;
-  box-shadow: none !important;
-  background-image: none !important;
-}
-
-/* Aligns the close button to the center *//*
-.findbar-closebutton {
-  margin-inline-start: 0.5em !important;
-  vertical-align: middle !important;
-  margin-bottom: 0.25em !important;
-  height: inherit !important;
-}
-
-/* Leave space for found matches number so the box doesn't jitter around *//*
-.found-matches[hidden="true"], .folder-icon {
-	display: inherit !important;
-	position: fixed;
-	width: 150px;
-	padding-left: 5px;
-}
-
-/* hide find status messages *//*
-.findbar-find-status{
-	display: none;
-}
-*/
-/******************************************************************************************************************************
- * Remove "Send Page to Device", "Send Link to Device", 
- * "Send Tab to Device" from context menu.
- *
- * Contributor(s): PilzAdam
- */
-
-#context-sendpagetodevice, #context-sep-sendpagetodevice,
-#context-sendlinktodevice, #context-sep-sendlinktodevice,
-#context_sendTabToDevice, #context_sendTabToDevice_separator {
-  display: none !important;
+/* Remove email image from context menu */
+#context-sendimage {
+  display: none;
 }
 
 /* hide new tab favicon */
-.tabbrowser-tab[image^="chrome://branding/"]:not([pinned]) .tab-icon-image
-{
+.tabbrowser-tab[image^="chrome://branding/"]:not([pinned]) .tab-icon-image {
 	display: none !important;
 }
 
 /* Get rid of that annoying flash of white when loading new pages. */
-
 browser, browser.display.background_color, tabbrowser tabpanels {
     background-color: #222222 !important;
 }
 
 /* white flash fix */
 browser[type="content-primary"], 
-browser[type="content"]
-{
+browser[type="content"] {
     background: #222222 !important;
 }
 
@@ -112,11 +50,6 @@ browser[type="content"]
     background: #222222 !important; 
     background-color: #222222 !important; 
     color: #222222 !important;
-}
-
-/* Hide "Privacy Protections" in menu */
-#appMenu-protection-report-button{ 
-  display: none;
 }
 
 /* --- Disable expanding --- */
@@ -139,4 +72,9 @@ browser[type="content"]
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
   box-shadow: none !important;
+}
+
+/* Remove blue flash on tab load */
+.tab-loading-burst {
+  display: none;
 }
