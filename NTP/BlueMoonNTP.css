@@ -101,8 +101,8 @@ a:hover::before, .search:hover::before {
     left: 850px;
     width: 700px;
     height: 200px;
-    padding-top: 153px;
-    padding-left: 9px;
+    padding-top: 134px;
+    padding-left: 12px;
     background-color: var(--P3Blue3);
     transform: rotateZ(345deg);
 }
