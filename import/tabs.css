@@ -6,7 +6,7 @@
     --active-tab-text-color: var(--P3Blue3);
     --inactive-tab-text-color: #DCF2FF;
     
-    --tab-height: 33px;
+    --tab-height: 32px;
     --tab-margin-top: 1px;
     --tab-min-height: var(--tab-height) !important;
 }
@@ -15,12 +15,10 @@
   Tab Stuff
 ********************************************************/
 .tabbrowser-tab {
-    margin-top: 3 !important;
+    margin-top: var(--tab-margin-top) !important;
     max-height: var(--tab-height);
-    border-radius: 100px;
-    /* Overlap the tabs */
-    margin-right: -24px !important;
     background-image: none !important; /* Makes it work with light/dark themes */
+    transition: margin 2s ease-out 1s;
 }
 
 .tab-stack, .tab-content {
@@ -47,6 +45,8 @@
 .tabbrowser-tab::before {
     border-left: solid 0px transparent;
     filter: drop-shadow(-1px 0px 0px var(--tab-border-color));
+    /* Overlap the tabs */
+    margin-left: -24px !important;
 }
 
 .tabbrowser-tab::after {
@@ -102,7 +102,7 @@
 
 /* Widths of tabs */
 .tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
-    max-width: 210px !important;
+    max-width: 200px !important;
     min-width: 100px !important;
 }
 
@@ -114,7 +114,7 @@
 #tabbrowser-tabs[overflow] .tabbrowser-tab[first-visible-tab]:not([pinned]),
 #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]),
 #tabbrowser-tabs:not([overflow]) .tabbrowser-tab:first-child {
-	margin-inline-start: 8px !important;
+	margin-inline-start: 32px !important;
 }
 
 /* spacing between overflow arrow and pinned tabs */
