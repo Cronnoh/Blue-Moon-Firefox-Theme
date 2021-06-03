@@ -7,6 +7,7 @@
     --toolbarbutton-icon-fill: var(--P3Blue3) !important;
     --toolbar-color: var(--P3Blue3) !important;
 	--button-hover-bgcolor: #002E4830 !important; /* P3Blue3 with low alpha */
+	--button-active-bgcolor: #002E4830 !important;
 }
 
 /* Background image */
@@ -31,8 +32,14 @@
 	color: rgba(220, 242, 255, 1) !important;
 }
 
-#urlbar-background {
+#urlbar {
+	border: 1px solid #00000055 !important;
 	border-radius: 1px 10px 1px 10px !important;
+	margin-top: 3px;
+}
+
+#urlbar-background {
+	border-radius: 1px 9px 1px 9px !important;
 }
 
 /* Change Color of bottom left thing */
@@ -91,4 +98,3 @@ spacer[part="overflow-end-indicator"], spacer[part="overflow-start-indicator"] {
 .tab-close-button {
 	display: none;
 }
-

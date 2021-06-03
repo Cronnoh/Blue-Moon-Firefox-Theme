@@ -6,8 +6,8 @@
     --active-tab-text-color: var(--P3Blue3);
     --inactive-tab-text-color: #DCF2FF;
     
-    --tab-height: 30px;
-    --tab-margin-top: 3px;
+    --tab-height: 33px;
+    --tab-margin-top: 1px;
     --tab-min-height: var(--tab-height) !important;
 }
 
@@ -15,9 +15,12 @@
   Tab Stuff
 ********************************************************/
 .tabbrowser-tab {
-    margin-top: var(--tab-margin-top) !important;
+    margin-top: 3 !important;
     max-height: var(--tab-height);
     border-radius: 100px;
+    /* Overlap the tabs */
+    margin-right: -24px !important;
+    background-image: none !important; /* Makes it work with light/dark themes */
 }
 
 .tab-stack, .tab-content {
@@ -101,12 +104,6 @@
 .tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
     max-width: 210px !important;
     min-width: 100px !important;
-}
-
-/* Overlap the tabs */
-.tabbrowser-tab {
-    margin-right: -24px !important;
-    background-image: none !important; /* Makes it work with light/dark themes */ 
 }
 
 :root[sizemode="normal"] #TabsToolbar {
