@@ -42,6 +42,7 @@ a {
     font: 42px 'Arial Black';
     font-weight: bold;
     text-decoration: none;
+    padding-top: calc(((var(--h) - 30px) / 2) - 9px);
     padding-left: 100px;
     /* border: solid 1px green; */
 
@@ -62,14 +63,15 @@ a::before, .search::before {
     display: box;
     position: absolute;
     content: "";
-    height: calc(var(--h) / 2);
-    width: calc(var(--h) / 2);
-    margin-top: calc(var(--h) / 4);
+    height: 30px;
+    width: 30px;
+    margin-top: 9px;
     margin-left: -60px; /* Distance between bullet and label */
     background-color: var(--P3Blue3);
 }
 
 .search::before {
+    margin-top: 15px;
     margin-left: 40px; /* Distance between bullet and box */
 }
 
@@ -99,7 +101,7 @@ a:hover::before, .search:hover::before {
     left: 850px;
     width: 700px;
     height: 200px;
-    padding-top: 142px;
+    padding-top: 153px;
     padding-left: 9px;
     background-color: var(--P3Blue3);
     transform: rotateZ(345deg);
@@ -125,7 +127,7 @@ a:hover::before, .search:hover::before {
 }
 
 #fulltime {
-    margin-top: -24px;
+    margin-top: -13px;
     margin-left: -12px;
 }
 
