@@ -130,3 +130,11 @@
 #tabs-newtab-button {
     margin-left: 20px !important;;
 }
+
+.tabbrowser-tab[selected] .tab-secondary-label {
+    color: var(--active-tab-text-color);     
+}
+
+.tabbrowser-tab .tab-secondary-label {
+    color: var(--inactive-tab-text-color);    
+}

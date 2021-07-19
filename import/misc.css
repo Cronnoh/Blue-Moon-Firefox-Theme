@@ -22,7 +22,7 @@
 /* Remove the "Sign in to sync" from top of hamburger menu. */
 
 #appMenu-fxa-status2, #appMenu-fxa-separator {
-  display: none;
+  display: none !important;
 }
 
 /* Remove email image from context menu */

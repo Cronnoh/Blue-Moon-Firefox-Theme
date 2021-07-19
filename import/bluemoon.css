@@ -54,7 +54,7 @@
 }
 
 /* Top right buttons dark blue */
-:root:not([sizemode=normal]) .titlebar-button{
+:root:not([sizemode=normal]) .titlebar-button {
 	stroke: var(--P3Blue3) !important;
 }
 
