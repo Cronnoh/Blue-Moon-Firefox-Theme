@@ -106,8 +106,12 @@
     min-width: 100px !important;
 }
 
-:root[sizemode="normal"] #TabsToolbar {
+#TabsToolbar {
     margin-top: 8px;
+}
+
+:root[sizemode="maximized"] #navigator-toolbox {
+    margin-top: -8px;
 }
 
 /* Add padding to the left of first tab */
