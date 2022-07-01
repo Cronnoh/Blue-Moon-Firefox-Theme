@@ -19,6 +19,8 @@
     max-height: var(--tab-height);
     background-image: none !important; /* Makes it work with light/dark themes */
     transition: margin 2s ease-out 1s;
+    /* Overlap the tabs */
+    margin-left: -24px !important;
 }
 
 .tab-stack, .tab-content {
@@ -45,8 +47,6 @@
 .tabbrowser-tab::before {
     border-left: solid 0px transparent;
     filter: drop-shadow(-1px 0px 0px var(--tab-border-color));
-    /* Overlap the tabs */
-    margin-left: -24px !important;
 }
 
 .tabbrowser-tab::after {
@@ -118,7 +118,7 @@
 #tabbrowser-tabs[overflow] .tabbrowser-tab[first-visible-tab]:not([pinned]),
 #tabbrowser-tabs[overflow] .tabbrowser-tab[pinned] + .tabbrowser-tab:not([pinned]),
 #tabbrowser-tabs:not([overflow]) .tabbrowser-tab:first-child {
-	margin-inline-start: 32px !important;
+	margin-inline-start: 8px !important;
 }
 
 /* spacing between overflow arrow and pinned tabs */
