@@ -18,7 +18,6 @@
     margin-top: var(--tab-margin-top) !important;
     max-height: var(--tab-height);
     background-image: none !important; /* Makes it work with light/dark themes */
-    transition: margin 2s ease-out 1s;
     /* Overlap the tabs */
     margin-left: -24px !important;
 }
@@ -102,7 +101,7 @@
 
 /* Widths of tabs */
 .tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
-    max-width: 200px !important;
+    max-width: 224px !important;
     min-width: 100px !important;
 }
 
